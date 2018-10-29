@@ -4,7 +4,7 @@
   "description": "A google chrome extension to generate and fill random text into a form field, Built on top of fakerjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "NODE_ENV=test npx jest --env=jsdom",
     "build": "webpack --mode production",
     "dev": "webpack --mode development ",
     "watch": "webpack --mode development --watch"
@@ -17,13 +17,18 @@
   },
   "devDependencies": {
     "@types/chrome": "0.0.74",
-    "@types/jquery": "^3.3.17",
     "@types/faker": "^4.1.4",
+    "@types/jest": "^23.3.8",
+    "@types/jquery": "^3.3.17",
+    "@types/sinon-chrome": "^2.2.4",
     "copy-webpack-plugin": "^4.5.3",
     "css-loader": "^1.0.0",
+    "jest": "^23.6.0",
     "mini-css-extract-plugin": "^0.4.4",
     "node-sass": "^4.9.4",
     "sass-loader": "^7.1.0",
+    "sinon-chrome": "^2.3.2",
+    "ts-jest": "^23.10.4",
     "ts-loader": "^5.2.2",
     "typescript": "^3.1.3",
     "webpack": "^4.20.2",

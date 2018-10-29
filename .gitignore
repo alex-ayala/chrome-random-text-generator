@@ -10,3 +10,5 @@ js/ts.js
 .npm
 .DS_Store
 dist/
+build/
+.idea/
